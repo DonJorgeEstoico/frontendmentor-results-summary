@@ -90,7 +90,7 @@ article {
 }
 
 #result-area {
-    width: 20vw;
+    width: 16vw;
     padding: 2.5rem;
     gap: 1rem;
     align-items: center;
@@ -100,7 +100,7 @@ article {
 }
 
 #summary-area {
-    width: 20vw;
+    width: 16vw;
     gap: 1rem;
     padding: 2rem;
     justify-content: space-between;
@@ -117,8 +117,13 @@ button {
     font-size: 1rem;
     background-color: hsl(224, 30%, 27%);
     color: #FFFFFF;
-    border-radius: 1rem;
+    border-radius: 2rem;
     border-style: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 0%, rgba(104, 77, 250, 1) 95%, rgba(120, 87, 255, 1) 100%);
 }
 
 /*------------------------------MEDIAS------------------------------*/
