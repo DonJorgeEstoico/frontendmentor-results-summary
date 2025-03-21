@@ -1,0 +1,138 @@
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(221, 100%, 96%);
+}
+
+/*------------------------------FONTS------------------------------*/
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.font-hanken,
+h1,
+h2,
+h3,
+b,
+span,
+button {
+    font-family: "HankenGrotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1,
+h2 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+b {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+/*------------------------------FLEXBOX------------------------------*/
+.flex-column,
+#score-area,
+#result-area,
+#summary-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row,
+section,
+article,
+#summary-widget {
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------ARTICLE------------------------------*/
+article {
+    width: fit-content;
+    padding-left: 0;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#score-area {
+    width: 6rem;
+    padding: 3rem;
+    border-radius: 6rem;
+    background: linear-gradient(0deg, rgba(72, 33, 202, 1) 81%, rgba(36, 33, 202, 1) 100%);
+}
+
+#result-area {
+    width: 20vw;
+    padding: 2.5rem;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(46, 43, 233, 1) 0%, rgba(104, 77, 250, 1) 95%, rgba(120, 87, 255, 1) 100%);
+}
+
+#summary-area {
+    width: 20vw;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+#summary-widget {
+    padding: 1rem;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: hsl(224, 30%, 27%);
+    color: #FFFFFF;
+    border-radius: 1rem;
+    border-style: none;
+}
+
+/*------------------------------MEDIAS------------------------------*/
+@media (max-width: 950px) {
+    body {
+        margin: 3rem;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    #result-area,
+    #summary-area {
+        width: auto;
+    }
+}
